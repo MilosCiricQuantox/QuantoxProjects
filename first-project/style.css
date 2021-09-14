@@ -41,17 +41,17 @@
     
     .bcg-img-top {
         position: absolute;
-        top: -45%;
-        left: -90%;
-        height: 150vw;
-        width: 150vw;
+        top: -20%;
+        left: -50%;
+        height: 100vw;
+        width: 100vw;
     }
     .bcg-img-bottom {
         position: absolute;
-        bottom: -45%;
-        right: -90%;
-        height: 150vw;
-        width: 150vw;
+        bottom: -20%;
+        right: -50%;
+        height: 100vw;
+        width: 100vw;
     }
     .card-container {
         position: absolute;
@@ -150,14 +150,14 @@
         position: absolute;
         height: 75vw;
         width: 75vw;
-        top: -50%;
+        top: -60%;
         left: -30%;
     }
     .bcg-img-bottom {
         position: absolute;
         height: 60vw;
         width: 60vw;
-        bottom: -40%;
+        bottom: -50%;
         right: -13%;
     }
 }
