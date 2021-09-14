@@ -60,6 +60,7 @@
         background-repeat: no-repeat;
         border-radius: 10px;
         background-color: white;
+
     }
     .card {
         position: absolute;
@@ -70,23 +71,23 @@
         margin-left: 115%;
         border: 5px solid white;
     }
-    .victor-text {
+    .card-title {
         margin-top: 60%;
         text-align: center;
         font-family: 'Kumbh';
         font-weight: 400;
     }
-    .victor-text h4 {
+    .card-title h4 {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--very-dark-de-blue);
     }
-    .victor-text span {
+    .card-title span {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--dark-gray-blue);
     }
-    .victor-text p {
+    .card-title p {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--dark-gray-blue);
@@ -140,6 +141,8 @@
         background-repeat: no-repeat;
         border-radius: 10px;
         background-color: white;
+        box-shadow: 1px 0px 14px 6px rgba(0,0,0,0.25);
+        
     }
     .card {
         position: absolute;
@@ -150,23 +153,23 @@
         margin-left: 115%;
         border: 5px solid white;
     }
-    .victor-text {
+    .card-title {
         margin-top: 60%;
         text-align: center;
         font-family: 'Kumbh';
         font-weight: 400;
     }
-    .victor-text h4 {
+    .card-title h4 {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--very-dark-de-blue);
     }
-    .victor-text span {
+    .card-title span {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--dark-gray-blue);
     }
-    .victor-text p {
+    .card-title p {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--dark-gray-blue);
@@ -227,6 +230,8 @@
         background-repeat: no-repeat;
         border-radius: 10px;
         background-color: white;
+        box-shadow: 1px 0px 14px 6px rgba(0,0,0,0.25);
+      
     }
     .card {
         position: absolute;
@@ -237,23 +242,23 @@
         margin-left: 115%;
         border: 5px solid white;
     }
-    .victor-text {
+    .card-title {
         margin-top: 60%;
         text-align: center;
         font-family: 'Kumbh';
         font-weight: 400;
     }
-    .victor-text h4 {
+    .card-title h4 {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--very-dark-de-blue);
     }
-    .victor-text span {
+    .card-title span {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--dark-gray-blue);
     }
-    .victor-text p {
+    .card-title p {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--dark-gray-blue);
