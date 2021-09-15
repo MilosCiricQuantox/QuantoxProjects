@@ -29,7 +29,8 @@
     src: url(./Kumbh_Sans/KumbhSans-VariableFont_wght.ttf);
 }
 
-@media only screen and (min-width: 375px) {
+/* Mobile */
+
 
     .container {
         display: flex;
@@ -39,17 +40,17 @@
     
     .bcg-img-top {
         position: absolute;
-        top: -45%;
-        left: -90%;
-        height: 150vw;
-        width: 150vw;
+        top: -20%;
+        left: -50%;
+        height: 100vw;
+        width: 100vw;
     }
     .bcg-img-bottom {
         position: absolute;
-        bottom: -45%;
-        right: -90%;
-        height: 150vw;
-        width: 150vw;
+        bottom: -20%;
+        right: -50%;
+        height: 100vw;
+        width: 100vw;
     }
     .card-container {
         position: absolute;
@@ -111,8 +112,10 @@
     }
     .f-div p {
         color: var(--dark-gray-blue);
+        font-weight: 400;
+        font-size: 10px;
+        letter-spacing: 2px;
     }
-}
 
 
 
@@ -133,154 +136,25 @@
         bottom: 0%;
         right: -15%;
     }
-    .card-container {
-        position: absolute;
-        width: 350px;
-        height: 400px;
-        background-image: url(./images/bg-pattern-card.svg);
-        background-repeat: no-repeat;
-        border-radius: 10px;
-        background-color: white;
-        box-shadow: 1px 0px 14px 6px rgba(0,0,0,0.25);
-        
-    }
-    .card {
-        position: absolute;
-    }
-    .card img {
-        border-radius: 50%;
-        margin-top: 80%;
-        margin-left: 115%;
-        border: 5px solid white;
-    }
-    .card-title {
-        margin-top: 60%;
-        text-align: center;
-        font-family: 'Kumbh';
-        font-weight: 400;
-    }
-    .card-title h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: var(--very-dark-de-blue);
-    }
-    .card-title span {
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: var(--dark-gray-blue);
-    }
-    .card-title p {
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: var(--dark-gray-blue);
-    }
-    hr {
-        color: var(--very-dark-de-blue);
-        margin-top: 8%;
-    }
-    .f-div {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10%;
-        font-family: 'Kumbh';
-        font-weight: 700;
-    }
-    .f-div h4 {
-        color: var(--very-dark-de-blue);
-        text-align: center;
-        font-weight: 700;
-        font-size: 18px;
-    }
-    .f-div p {
-        color: var(--dark-gray-blue);
-    }
 }
-
 
 
 /* Desktop */
 
 @media only screen and (min-width: 1440px) {
 
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .bcg-img-top {
         position: absolute;
         height: 75vw;
         width: 75vw;
-        top: -50%;
+        top: -60%;
         left: -30%;
     }
     .bcg-img-bottom {
         position: absolute;
         height: 60vw;
         width: 60vw;
-        bottom: -40%;
+        bottom: -50%;
         right: -13%;
-    }
-    .card-container {
-        position: absolute;
-        width: 350px;
-        height: 400px;
-        background-image: url(./images/bg-pattern-card.svg);
-        background-repeat: no-repeat;
-        border-radius: 10px;
-        background-color: white;
-        box-shadow: 1px 0px 14px 6px rgba(0,0,0,0.25);
-      
-    }
-    .card {
-        position: absolute;
-    }
-    .card img {
-        border-radius: 50%;
-        margin-top: 80%;
-        margin-left: 115%;
-        border: 5px solid white;
-    }
-    .card-title {
-        margin-top: 60%;
-        text-align: center;
-        font-family: 'Kumbh';
-        font-weight: 400;
-    }
-    .card-title h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: var(--very-dark-de-blue);
-    }
-    .card-title span {
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: var(--dark-gray-blue);
-    }
-    .card-title p {
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: var(--dark-gray-blue);
-    }
-    hr {
-        color: var(--very-dark-de-blue);
-        margin-top: 8%;
-    }
-    .f-div {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10%;
-        font-family: 'Kumbh';
-        font-weight: 700;
-    }
-    .f-div h4 {
-        color: var(--very-dark-de-blue);
-        text-align: center;
-        font-weight: 700;
-        font-size: 18px;
-    }
-    .f-div p {
-        color: var(--dark-gray-blue);
     }
 }
