@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#F2F2F2 ;
+}
+
+.container {
+    width: 100%;
+}
+
+/* ************************   Header   *********************** */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 48px;
+    margin-bottom: 54px;
+}
+
+/* *************************    Main   *********************** */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "first second "
+        "third third ";
+        column-gap: 16px;
+}
+
+.image-hero-left {
+    grid-area: first;
+    position: relative;
+    left: -10%;
+}
+
+.image-hero-left img{
+    width: 100%;
+}
+
+.group-btns {
+    grid-area: third;
+    margin: 0px 24px;
+    text-align: center;
+    line-height: 44px;
+    
+}
+
+.image-hero-right {
+    grid-area: second;
+    position: relative;
+    right: -10%;
+
+}
+
+.image-hero-right img{
+    width: 100%;
+}
+
+.group-chat  {
+    font-size: 46px;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    color: #28283D;
+    line-height: 44px;
+}
+
+.group-chat:first-child  {
+    font-size: 46px;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    color: #28283D;
+    line-height: 44px;
+    margin-top: 44px;
+    margin-bottom: 24px;
+}
+
+.group-chat p:last-child {
+    font-size: 16px;
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    color: #87879D;
+    line-height: 26px;
+    margin-top: 24px;
+}
+
+
+.btn-one {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.btn-one button{
+    width: 193px;
+    height: 58px;
+    background-color: #4D96A9;
+    border-radius: 29px;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    color:#ffffff;
+    border: hidden;
+}
+
+.btn-one span{
+    color: #8FE3F9;
+}
+
+.btn-what {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-what button{
+    width: 139px;
+    height: 58px;
+    background-color: #855FB1;
+    border-radius: 29px;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    color:#ffffff;
+    border: hidden;
+}
+
+.btn-what span{
+    color: #8FE3F9;
+}
+
+.circle-num {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.circle {
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgba(135,135,157, 0.25);
+    border-radius: 100px;
+    position: relative;
+    margin: 0px auto 0 auto;
+    background-color: #F2F2F2;
+    z-index: 10;
+  }
+  
+  .num{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #87879D;
+    font-family: 'Red Hat Display';
+  }
+  
+  .vertical-line {
+    width: 2px;
+    height: 84px;
+    background: rgba(135,135,157, 0.25);
+    opacity: 0.25;
+    margin: 20px auto 0 auto;
+  }
+
+
+  .chat-images {
+      width: 327px;
+      display: grid;
+      grid-template-areas: 
+        "img-1 img-2 "
+        "img-3 img-4 ";
+        margin: 0 auto;
+        gap: 25px;
+  }
+
+  .chat-images img {
+      width: 100%;
+      grid-area: img-1;
+      border-radius: 8px;
+  }
+
+
+  .smart-meetings {
+      margin: 64px 26px;
+      text-align: center;
+      font-family: 'Red Hat Display';
+  }
+
+  .meetings h3 {
+      color: #4D96A9;
+      line-height: 26px;
+      letter-spacing: 4px;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    
+    .meetings h1 {
+      color: #28283D;
+      font-size: 32px;
+      line-height: 36px;
+      margin-top: 24px;
+      margin-bottom: 32px;
+  }
+
+  .meetings p {
+    color: #28283D;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #87879D;
+}
+
+/* *********************    footer   ************************ */
+
+
+
+footer {
+    position: relative;
+    height: 428px;
+    margin-top: -28px;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    background: linear-gradient(rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(./assets/desktop/image-footer.jpg);
+    background-size: cover;
+    background-position: 50% 20%;
+  }
+
+.footer-div h2 {
+    padding-top: 92px;
+    color: #FAFAFA;
+    font-size: 32px;
+    line-height: 36px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.footer-div p {
+    padding-top: 92px;
+    color: #FAFAFA;
+    font-size: 18px;
+    line-height: 26px;
+    width: 327px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+}
+
+.footer-div button {
+    width: 193px;
+    height: 58px;
+    background-color: #855FB1 ;
+    border-radius: 29px;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    color:#ffffff;
+    border: hidden;
+    cursor: pointer;
+}
+
+
+/* ***********************************   Tablet  ************************************ */
+
+@media only screen and (min-width:768px) {
+    
+    /* ******************* Main ******************** */
+
+    .group-btns  {
+        margin: 72px 155px 80px;
+    }
+    
+    .group-chat p:first-child  {
+        font-size: 48px;
+        font-family: 'Red Hat Display';
+        font-weight: 900;
+        color: #28283D;
+        margin-top: 72px;
+        margin-bottom: 24px;
+        text-align: center;
+        margin: 10px auto;
+        width: 339px;
+        height: 96px;
+    }
+
+    .group-chat p:last-child {
+        font-size: 16px;
+        font-family: 'Red Hat Display';
+        font-weight: 500;
+        color: #87879D;
+        line-height: 26px;
+        text-align: center;
+        width: 457px;
+        margin: 0 auto;
+        padding-top: 24px;
+        padding-bottom: 8px;
+    }
+
+    .group-btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-tablet {
+        display: flex;
+        justify-content: space-between;
+        width: 348px;
+        position: relative;
+    }
+    
+    
+    .btn-one {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+    
+    .btn-one button{
+        width: 193px;
+        height: 58px;
+        background-color: #4D96A9;
+        border-radius: 29px;
+        font-family: 'Red Hat Display';
+        font-weight: 900;
+        color:#ffffff;
+        border: hidden;
+    }
+    
+    .btn-one span{
+        color: #8FE3F9;
+    }
+    
+    .btn-what {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn-what button{
+        width: 139px;
+        height: 58px;
+        background-color: #855FB1;
+        border-radius: 29px;
+        font-family: 'Red Hat Display';
+        font-weight: 900;
+        color:#ffffff;
+        border: hidden;
+    }
+    
+    .btn-what span{
+        color: #8FE3F9;
+    }
+    
+    .circle-num {
+        margin-top:8px;
+        margin-bottom: 67px;
+    }
+    .circle {
+        width: 56px;
+        height: 56px;
+        border: 1px solid rgba(135,135,157, 0.25);
+        border-radius: 100px;
+        position: relative;
+        margin: 0px auto 0 auto;
+        opacity: 1;
+        background-color: #F2F2F2;
+        z-index: 2;
+      }
+    
+    
+      .chat-images {
+          width: 689px;
+          display: grid;
+          grid-template-areas: 
+            "img-1 img-2 img-3 img-4 ";
+            
+            margin: 0 auto;
+            gap: 25px;
+            margin-top: 67px;
+            margin-bottom: 48px;
+      }
+    
+      .chat-images img {
+          width: 100%;
+          grid-area: img-1;
+          border-radius: 8px;
+      }
+    
+    
+      .smart-meetings {
+          width: 573px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Red Hat Display';
+          margin-bottom: 80px;
+      }
+    
+      .meetings h3 {
+          color: #4D96A9;
+          line-height: 26px;
+          letter-spacing: 4px;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+        
+        .meetings h1 {
+          color: #28283D;
+          font-size: 40px;
+          line-height: 44px;
+          margin-top: 24px;
+          margin-bottom: 32px;
+          text-align: center;
+          margin-left: 65px;
+          margin-right: 63px;
+      }
+
+    
+      .meetings p {
+        color: #28283D;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+        color: #87879D;
+    }
+    
+
+    /* ***********************   Footer   *************************** */
+
+    .footer-div h2 {
+        padding-top: 92px;
+        font-size: 40px;
+        line-height: 44px;
+        padding-bottom: 32px;
+        text-align: center;
+    }
+
+    .footer-div p {
+        color: #FAFAFA;
+        font-size: 18px;
+        line-height: 26px;
+        width: 327px;
+        text-align: center;
+        padding-bottom: 38px;
+        margin: 0 auto;
+    }
+
+    .footer-div span {
+        color: #D9B8FF;
+    }
+    
+}
+
+
+/* *********************** Desktop ************************** */
+
+
+@media only screen and (min-width:1440px) {
+
+    /* ******************    Header   ****************** */
+
+    header .logo{
+        margin-top: 0 ;
+        margin-bottom: 61px;
+    }
+
+    /* ******************   Main    *********************/
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "first third second";
+        column-gap: 0px;
+        margin: 0 auto;
+        justify-items: center;
+    }
+
+
+
+    .image-hero-left {
+        grid-area: first;
+        position: relative;
+        margin-left: 10%;
+    }
+    
+    .image-hero-left img{
+        width: 100%;
+    }
+    
+    .group-btns {
+        grid-area: third;
+        text-align: center;
+        line-height: 44px;
+        width: 540px;
+        margin: 0 88px;
+    }
+    
+    .image-hero-right {
+        grid-area: second;
+        position: relative;
+        margin-right: 10%;
+    
+    }
+    
+    .image-hero-right img{
+        width: 100%;
+    }
+
+
+    .group-btns  {
+        margin: 0px 0px 0px;
+    }
+    
+    .group-chat p:first-child  {
+        font-size: 64px;
+        font-weight: 900;
+        margin-bottom: 24px;
+        text-align: center;
+        margin-bottom: 34px;
+        width: 445px;
+        height: 128px;
+        line-height: 64px;
+    }
+
+    .group-chat p:last-child {
+        font-size: 18px;
+        font-family: 'Red Hat Display';
+        font-weight: 500;
+        color: #87879D;
+        line-height: 26px;
+        text-align: center;
+        width: 540px;
+        padding-bottom: 32px;
+    }
+
+    .btn-one button:hover {
+        background-color: #71C0D4;
+        cursor: pointer;
+    }
+
+    .btn-what button:hover {
+        background-color: #B18BDD;
+        cursor: pointer;
+    }
+    
+    
+    .btn-tablet {
+        height: 58px;
+    }
+
+    .circle-num {
+        margin-top:110px;
+        margin-bottom: 64px;
+    }
+    
+    .chat-images {
+        width: 1110px;
+        display: grid;
+        grid-template-areas: 
+        "img-1 img-2 img-3 img-4 ";
+        
+        margin: 0 auto;
+        gap: 25px;
+        margin-bottom: 80px;
+      }
+    
+      .chat-images img {
+        width: 100%;
+        grid-area: img-1;
+        border-radius: 8px;
+      }
+    
+    
+      .smart-meetings {
+          width: 573px;
+          margin: 0 auto;
+          text-align: center;
+          font-family: 'Red Hat Display';
+          margin-bottom: 72px;
+      }
+    
+      .meetings h3 {
+          color: #4D96A9;
+          line-height: 26px;
+          letter-spacing: 4px;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+        
+        .meetings h1 {
+          color: #28283D;
+          font-size: 40px;
+          line-height: 44px;
+          margin-top: 16px;
+          margin-bottom: 32px;
+          text-align: center;
+          margin-left: 65px;
+          margin-right: 63px;
+      }
+    
+      .meetings p {
+        color: #28283D;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 500;
+        color: #87879D;
+        margin-bottom: 72px;
+    }
+    
+/* ************************   Footer   **************************** */
+ 
+
+    .foot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 428px;
+    }
+
+    
+    .div-des {
+        display: flex;
+        height: 88px;
+        width: 1110px;
+        justify-content: space-around;
+        align-items:center
+    }
+
+    .footer-div h2 {
+        width: 350px;
+        text-align: left;
+        padding-bottom: 100px;
+    }
+
+    .footer-div p {
+        color: #FAFAFA;
+        font-size: 18px;
+        line-height: 26px;
+        width: 350px;
+        text-align: left;
+        align-items: center;
+    }
+
+
+    .footer-div span {
+        color: #D9B8FF;
+    }
+
+    .footer-div button:hover {
+        background-color: #B18BDD;
+        cursor: pointer;
+    }
+
+}
