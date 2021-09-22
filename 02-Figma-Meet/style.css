@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
 
+
+:root {
+    --moderate-violet:hsl(263, 55%, 52%);
+    
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +20,9 @@ body {
 .container {
     width: 100%;
 }
+
+@media screen and (min-width: 325px)  {
+
 
 /* ************************   Header   *********************** */
 
@@ -158,6 +168,7 @@ header {
     margin: 0;
     color: #87879D;
     font-family: 'Red Hat Display';
+    font-weight: 900;
   }
   
   .vertical-line {
@@ -206,6 +217,8 @@ header {
       line-height: 36px;
       margin-top: 24px;
       margin-bottom: 32px;
+      font-weight: 900;
+
   }
 
   .meetings p {
@@ -264,10 +277,11 @@ footer {
     cursor: pointer;
 }
 
+}
 
 /* ***********************************   Tablet  ************************************ */
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:768px) and (max-width:1199px){
     
     /* ******************* Main ******************** */
 
@@ -322,40 +336,6 @@ footer {
         margin-bottom: 16px;
     }
     
-    .btn-one button{
-        width: 193px;
-        height: 58px;
-        background-color: #4D96A9;
-        border-radius: 29px;
-        font-family: 'Red Hat Display';
-        font-weight: 900;
-        color:#ffffff;
-        border: hidden;
-    }
-    
-    .btn-one span{
-        color: #8FE3F9;
-    }
-    
-    .btn-what {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .btn-what button{
-        width: 139px;
-        height: 58px;
-        background-color: #855FB1;
-        border-radius: 29px;
-        font-family: 'Red Hat Display';
-        font-weight: 900;
-        color:#ffffff;
-        border: hidden;
-    }
-    
-    .btn-what span{
-        color: #8FE3F9;
-    }
     
     .circle-num {
         margin-top:8px;
@@ -418,6 +398,7 @@ footer {
           text-align: center;
           margin-left: 65px;
           margin-right: 63px;
+          font-weight: 900;
       }
 
     
@@ -460,13 +441,12 @@ footer {
 /* *********************** Desktop ************************** */
 
 
-@media only screen and (min-width:1440px) {
+@media only screen and (min-width:1200px) {
 
     /* ******************    Header   ****************** */
 
     header .logo{
-        margin-top: 0 ;
-        margin-bottom: 61px;
+        margin-top: 80px;
     }
 
     /* ******************   Main    *********************/
@@ -491,6 +471,8 @@ footer {
     .image-hero-left img{
         width: 100%;
     }
+
+    
     
     .group-btns {
         grid-area: third;
@@ -519,15 +501,14 @@ footer {
     .group-chat p:first-child  {
         font-size: 64px;
         font-weight: 900;
-        margin-bottom: 24px;
         text-align: center;
-        margin-bottom: 34px;
-        width: 445px;
         height: 128px;
         line-height: 64px;
     }
-
+    
     .group-chat p:last-child {
+        margin-bottom: 32px;
+        margin-top: 34px;
         font-size: 18px;
         font-family: 'Red Hat Display';
         font-weight: 500;
@@ -535,7 +516,7 @@ footer {
         line-height: 26px;
         text-align: center;
         width: 540px;
-        padding-bottom: 32px;
+        padding: 0px;
     }
 
     .btn-one button:hover {
@@ -552,6 +533,21 @@ footer {
     .btn-tablet {
         height: 58px;
     }
+
+    .group-btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-tablet {
+        display: flex;
+        justify-content: space-between;
+        width: 348px;
+        position: relative;
+    }
+    
 
     .circle-num {
         margin-top:110px;
