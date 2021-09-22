@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
 
 
-:root {
-    --moderate-violet:hsl(263, 55%, 52%);
-    
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +14,6 @@ body {
 .container {
     width: 100%;
 }
-
-@media screen and (min-width: 325px)  {
 
 
 /* ************************   Header   *********************** */
@@ -277,7 +269,7 @@ footer {
     cursor: pointer;
 }
 
-}
+
 
 /* ***********************************   Tablet  ************************************ */
 
@@ -291,9 +283,6 @@ footer {
     
     .group-chat p:first-child  {
         font-size: 48px;
-        font-family: 'Red Hat Display';
-        font-weight: 900;
-        color: #28283D;
         margin-top: 72px;
         margin-bottom: 24px;
         text-align: center;
@@ -303,16 +292,11 @@ footer {
     }
 
     .group-chat p:last-child {
-        font-size: 16px;
-        font-family: 'Red Hat Display';
-        font-weight: 500;
-        color: #87879D;
         line-height: 26px;
         text-align: center;
         width: 457px;
-        margin: 0 auto;
-        padding-top: 24px;
-        padding-bottom: 8px;
+        margin-top: 24px;
+        margin-bottom: 8px;
     }
 
     .group-btns {
@@ -329,106 +313,49 @@ footer {
         position: relative;
     }
     
-    
-    .btn-one {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 16px;
-    }
-    
-    
     .circle-num {
         margin-top:8px;
         margin-bottom: 67px;
     }
-    .circle {
-        width: 56px;
-        height: 56px;
-        border: 1px solid rgba(135,135,157, 0.25);
-        border-radius: 100px;
-        position: relative;
-        margin: 0px auto 0 auto;
-        opacity: 1;
-        background-color: #F2F2F2;
-        z-index: 2;
-      }
     
     
-      .chat-images {
-          width: 689px;
-          display: grid;
-          grid-template-areas: 
-            "img-1 img-2 img-3 img-4 ";
-            
-            margin: 0 auto;
-            gap: 25px;
-            margin-top: 67px;
-            margin-bottom: 48px;
-      }
-    
-      .chat-images img {
-          width: 100%;
-          grid-area: img-1;
-          border-radius: 8px;
-      }
-    
+    .chat-images {
+        width: 689px;
+        display: grid;
+        grid-template-areas: 
+        "img-1 img-2 img-3 img-4 ";
+        
+        margin: 0 auto;
+        gap: 25px;
+        margin-top: 67px;
+        margin-bottom: 48px;
+    }
     
       .smart-meetings {
           width: 573px;
           margin: 0 auto;
-          text-align: center;
-          font-family: 'Red Hat Display';
           margin-bottom: 80px;
       }
-    
-      .meetings h3 {
-          color: #4D96A9;
-          line-height: 26px;
-          letter-spacing: 4px;
-          font-size: 16px;
-          text-transform: uppercase;
-        }
         
         .meetings h1 {
-          color: #28283D;
           font-size: 40px;
           line-height: 44px;
-          margin-top: 24px;
-          margin-bottom: 32px;
           text-align: center;
           margin-left: 65px;
           margin-right: 63px;
-          font-weight: 900;
       }
 
-    
-      .meetings p {
-        color: #28283D;
-        font-size: 16px;
-        line-height: 26px;
-        font-weight: 500;
-        color: #87879D;
-    }
-    
 
     /* ***********************   Footer   *************************** */
 
     .footer-div h2 {
-        padding-top: 92px;
         font-size: 40px;
         line-height: 44px;
         padding-bottom: 32px;
-        text-align: center;
     }
 
     .footer-div p {
-        color: #FAFAFA;
-        font-size: 18px;
-        line-height: 26px;
-        width: 327px;
-        text-align: center;
         padding-bottom: 38px;
-        margin: 0 auto;
     }
 
     .footer-div span {
@@ -463,17 +390,9 @@ footer {
 
 
     .image-hero-left {
-        grid-area: first;
-        position: relative;
         margin-left: 10%;
     }
-    
-    .image-hero-left img{
-        width: 100%;
-    }
 
-    
-    
     .group-btns {
         grid-area: third;
         text-align: center;
@@ -483,16 +402,9 @@ footer {
     }
     
     .image-hero-right {
-        grid-area: second;
-        position: relative;
         margin-right: 10%;
     
     }
-    
-    .image-hero-right img{
-        width: 100%;
-    }
-
 
     .group-btns  {
         margin: 0px 0px 0px;
@@ -500,7 +412,6 @@ footer {
     
     .group-chat p:first-child  {
         font-size: 64px;
-        font-weight: 900;
         text-align: center;
         height: 128px;
         line-height: 64px;
@@ -510,10 +421,6 @@ footer {
         margin-bottom: 32px;
         margin-top: 34px;
         font-size: 18px;
-        font-family: 'Red Hat Display';
-        font-weight: 500;
-        color: #87879D;
-        line-height: 26px;
         text-align: center;
         width: 540px;
         padding: 0px;
@@ -551,7 +458,6 @@ footer {
 
     .circle-num {
         margin-top:110px;
-        margin-bottom: 64px;
     }
     
     .chat-images {
@@ -564,32 +470,14 @@ footer {
         gap: 25px;
         margin-bottom: 80px;
       }
-    
-      .chat-images img {
-        width: 100%;
-        grid-area: img-1;
-        border-radius: 8px;
-      }
-    
-    
+  
       .smart-meetings {
           width: 573px;
           margin: 0 auto;
-          text-align: center;
-          font-family: 'Red Hat Display';
           margin-bottom: 72px;
       }
-    
-      .meetings h3 {
-          color: #4D96A9;
-          line-height: 26px;
-          letter-spacing: 4px;
-          font-size: 16px;
-          text-transform: uppercase;
-        }
         
         .meetings h1 {
-          color: #28283D;
           font-size: 40px;
           line-height: 44px;
           margin-top: 16px;
@@ -600,11 +488,7 @@ footer {
       }
     
       .meetings p {
-        color: #28283D;
         font-size: 18px;
-        line-height: 26px;
-        font-weight: 500;
-        color: #87879D;
         margin-bottom: 72px;
     }
     
@@ -617,8 +501,7 @@ footer {
         align-items: center;
         height: 428px;
     }
-
-    
+   
     .div-des {
         display: flex;
         height: 88px;
@@ -634,14 +517,11 @@ footer {
     }
 
     .footer-div p {
-        color: #FAFAFA;
         font-size: 18px;
-        line-height: 26px;
         width: 350px;
         text-align: left;
         align-items: center;
     }
-
 
     .footer-div span {
         color: #D9B8FF;
