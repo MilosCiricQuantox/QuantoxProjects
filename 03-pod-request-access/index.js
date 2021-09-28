@@ -8,20 +8,19 @@ function validateEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-function email() {
-    if(input.value === '') {
+function email(e) {
+    e.preventDefault();
+    if (input.value === '') {
         error.textContent = 'Oops! Please add your email';
-    } else if (!validateEmail(input.value)) {
+    }
+    else if (!validateEmail(input.value)) {
         error.textContent = 'Oops! Please check your email';
     }
     input.value = '';
 }
-
-
 input.addEventListener('click', function () {
     error.textContent = '';
 })
-
 
 
 button.addEventListener('click', email);
