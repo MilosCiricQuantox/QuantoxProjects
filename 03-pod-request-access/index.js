@@ -1,5 +1,5 @@
-let input = document.querySelector('.input');
-let button = document.querySelector('.button');
+let input = document.querySelector('.js-input');
+let button = document.querySelector('.js-button');
 let error = document.querySelector('.error-message');
 let body = document.querySelector('body');
 

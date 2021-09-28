@@ -200,6 +200,8 @@ input::placeholder {
     
     .logo{
         margin-top: 49px;
+        display: flex;
+        justify-content: flex-start;
     }
     
     
