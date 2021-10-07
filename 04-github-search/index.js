@@ -57,7 +57,10 @@ const getInfo = (username) => {
     })  
     .then(data => {
         if (data.login) {
-            displayUser(data)
+            displayUser(data);
+            createTwitterAnchor(data.twitter_username);
+            createBlogAnchor(data.blog);
+            createCompanyAnchor(data.html_url);
         } else {
             displayError();
         }
@@ -97,32 +100,41 @@ const displayUser= (obj) => {
         el.style.opacity = '100%';
         }
     }) 
-    
+}
+
+const createTwitterAnchor = (twitter_username) => {
     if(contactLocationThird.textContent !== 'Not Available') {
         contactLocationThird.textContent = '';
         let a = document.createElement('a');
-        a.textContent = obj.twitter_username;
-        a.setAttribute('href', `https://www.twitter.com/${obj.twitter_username}`);
+        a.textContent = twitter_username;
+        a.setAttribute('href', `https://www.twitter.com/${twitter_username}`);
         a.setAttribute('target', '_blank');
         a.style.textDecoration = 'none'
         a.style.color = 'inherit';
         contactLocationThird.appendChild(a);
     }
+
+}
+
+const createBlogAnchor = (blog) => {
     if(contactLocationSecond.textContent !== 'Not Available') {
         contactLocationSecond.textContent = '';
         let a = document.createElement('a');
-        a.textContent = obj.blog;
-        a.setAttribute('href', `https://${obj.blog}`);
+        a.textContent = blog;
+        a.setAttribute('href', `https://${blog}`);
         a.setAttribute('target', '_blank');
         a.style.textDecoration = 'none'
         a.style.color = 'inherit';
         contactLocationSecond.appendChild(a);
     }
+}
+
+const createCompanyAnchor = (company) => {
     if(contactLocationFourth.textContent !== 'Not Available') {
         contactLocationFourth.textContent = '';
         let a = document.createElement('a');
         a.textContent = 'github';
-        a.setAttribute('href', `${obj.html_url}`);
+        a.setAttribute('href', `${company}`);
         a.setAttribute('target', '_blank');
         a.style.textDecoration = 'none'
         a.style.color = 'inherit';
