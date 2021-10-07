@@ -21,22 +21,21 @@ const contactLocationFirst = document.querySelector('.contact-location.first spa
 const contactLocationSecond = document.querySelector('.contact-location.second span');
 const contactLocationThird = document.querySelector('.contact-location.third span');
 const contactLocationFourth = document.querySelector('.contact-location.fourth span');
-const contactLocationimgs = document.querySelector('.contact-location img');
+const contactLocationimgs = document.querySelector('.contact-location i');
 const jsNoResults = document.querySelector('.js-no-results');
 const body = document.querySelector('body');
+const contactLocation = document.querySelectorAll('.contact-location');
+
+const darkElement = [body, container, followers, jsInput, devfinder, main, jsUserInfo, jsAbout, jsLocation, contactLocationimgs];
+
+const toggleDark = (el) => {
+    el.forEach(element => {
+        element.classList.toggle('dark');
+    })
+}
 
 jsButtonMode.addEventListener('click', function () {
-    body.classList.toggle('dark');
-    container.classList.toggle('dark');
-    followers.classList.toggle('dark');
-    jsInput.classList.toggle('dark');
-    devfinder.classList.toggle('dark');
-    main.classList.toggle('dark');
-    jsUserInfo.classList.toggle('dark');
-    jsAbout.classList.toggle('dark');
-    jsAboutP.classList.toggle('dark');
-    jsLocation.classList.toggle('dark');
-    contactLocationimgs.classList.toggle('dark');
+    toggleDark(darkElement);
     
     if(jsButtonMode.textContent === 'Dark'){
         jsButtonMode.textContent = 'LIGHT';
@@ -45,24 +44,6 @@ jsButtonMode.addEventListener('click', function () {
         jsButtonMode.textContent = 'Dark';
         moonSun.src = './assets/icon-sun.svg';
     }
-  
-    const firstImg = document.querySelector('.first img');
-    const secondImg = document.querySelector('.second img');
-    const thirdImg = document.querySelector('.third img');
-    const fourthImg = document.querySelector('.fourth img');
-
-    if(jsButtonMode.textContent === 'Dark'){
-        firstImg.src = './assets/icon-location-white.svg';
-        secondImg.src = './assets/icon-website-white.svg';
-        thirdImg.src = './assets/icon-twitter-white.svg';
-        fourthImg.src = './assets/icon-company-white.svg';
-    } else {
-        firstImg.src = './assets/icon-location.svg';
-        secondImg.src = './assets/icon-website.svg';
-        thirdImg.src = './assets/icon-twitter.svg';
-        fourthImg.src = './assets/icon-company.svg';
-    }
-
 })
 
 const displayError = () => {
@@ -108,33 +89,15 @@ const displayUser= (obj) => {
     contactLocationThird.textContent = obj.twitter_username || 'Not Available';
     contactLocationFourth.textContent = obj.company || 'Not Available';
     
-    if(contactLocationFirst.textContent === 'Not Available') {
-        contactLocationFirst.style.opacity = '50%';
-    }
-    else {
-        contactLocationFirst.style.opacity = '100%';
-    }
-    if(contactLocationSecond.textContent === 'Not Available') {
-        contactLocationSecond.style.opacity = '50%';
-    }
-    else {
-        contactLocationSecond.style.opacity = '100%';
-    }
-    if(contactLocationThird.textContent === 'Not Available') {
-        contactLocationThird.style.opacity = '50%';
-    }
-    else {
-        contactLocationThird.style.opacity = '100%';
-    }
-    if(contactLocationFourth.textContent === 'Not Available') {
-        contactLocationFourth.style.opacity = '50%';
-    }
-    else {
-        contactLocationFourth.style.opacity = '100%';
-    }
+    contactLocation.forEach( el => {
+        if(el.textContent === 'Not Available') {
+        el.style.opacity = '50%';
+        }
+        else {
+        el.style.opacity = '100%';
+        }
+    }) 
     
-    contactLocationThird.style.textDecoration = 'none';
-    contactLocationThird.style.color = 'inherit';
     if(contactLocationThird.textContent !== 'Not Available') {
         contactLocationThird.textContent = '';
         let a = document.createElement('a');

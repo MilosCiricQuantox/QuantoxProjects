@@ -214,15 +214,18 @@ main {
     font-weight: 400;
 }
 
-.js-location{
+.js-location span{
     font-size: 13px;
     color: var(--kashmir-blue);
     
 }
 
-.js-location img {
+.js-location i {
+    font-size: 20px;
     padding-right: 13px;
     word-spacing: 1px;
+    color: var(--kashmir-blue);
+
 }
 
 .contact-location {
@@ -282,10 +285,13 @@ main.dark {
     color: #FFFFFF; 
 }
 
-.dark.js-location {
+.dark.js-location span {
     color: #FFFFFF;
 }
 
+.dark.js-location i {
+    color: #FFFFFF;
+}
 /* *********************   Tablet   ************************** */
 
 @media only screen and (min-width:768px) {
@@ -382,6 +388,10 @@ main.dark {
         grid-template-areas: 
         "first second"
         "third fourth"; 
+        font-size: 15px;
+    }
+
+    .js-location span{
         font-size: 15px;
     }
 
